@@ -6,5 +6,5 @@
 
 | Left-aligned | Center-aligned  | Right-aligned          |
 | :---         |     :---:       |          ---:          |
-| just text    | **bold text**   | _ _italics_ _          |
+| just text    | **bold text**   |    _italics_           |
 | ~~no text~~  | ***super text***| 	<sup>upper text</sup> |
