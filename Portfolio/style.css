@@ -1,0 +1,46 @@
+
+
+h1 { 
+    text-align: center;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h3 {
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.aboutme {
+    text-align: center;
+    border: 5px outset blue;
+    margin: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;}
+    .myDiv:hover {border-radius: 15px 50px 30px;
+    padding: 10px;
+  }
+
+
+.buttons {
+text-align: center;
+
+
+}
+
+table, th {
+    border: 5px outset  blue;
+    text-align: center;
+    background-color: aliceblue;
+    color: black
+}
+td {
+    border: 2px outset blue
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
