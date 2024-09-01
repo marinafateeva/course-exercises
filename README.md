@@ -8,3 +8,5 @@
 | :---         |     :---:       |          ---:          |
 | just text    | **bold text**   |    _italics_           |
 | ~~no text~~  | ***super text***| 	<sup>upper text</sup> |
+
+![picture](picture.png)
