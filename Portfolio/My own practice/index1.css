@@ -184,6 +184,14 @@ html{
  text-align: center;
  padding: 15px;
 }
+.info{
+ font-size: large;
+ 
+}
+.info ul{
+ display: flex;
+ flex-direction: column;
+}
 
 /* Contact Section */
 #contact{
@@ -247,11 +255,19 @@ html{
 .some ul li a{
    text-decoration: none;
    color: white;
-   padding: 40px 25px;
+   padding: 20px 25px;
+   display: flex;
+   align-items: center; /* To vertically center align */
+   justify-content: center; /* To horizontally center align */
    transition: all .5s ease;
-} 
+}
+ 
 .some ul li a:hover{
-  background-color: white; 
-  padding: 40px 30px;
-  color: black;
-  box-shadow: 5px 5px 5px red;}
+  background-color: white;
+  padding: 20px 25px; /* Adjusting padding to center the white box */
+  border-radius: 15px;
+  box-shadow: 0 0 10px white;
+  display: flex;
+  align-items: center; /* To vertically center the content */
+  justify-content: center; /* To horizontally center the content */
+}
