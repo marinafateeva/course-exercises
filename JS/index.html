@@ -19,33 +19,40 @@
     <div>
         <h3>VAR</h3>
         <p>The var keyword was used in all JavaScript code from 1995 to 2015 to declare a value that can be changed. 
-            The var keyword should only be used in code written for older browsers. </p> <br>
+           The var keyword should only be used in code written for older browsers. </p> <br>
         <h3>LET</h3>
         <p>The let and const keywords were added to JavaScript in 2015. LET is currently used to declate a value that can be changed.
-            Let is used when const cannot be.
+           Let is used when const cannot be.
         </p> <br>
         <h3>CONST</h3>
         <p>Const is used if the value or the type (arrays and objects) should not be changed. </p> <br>
     </div>
+<hr>
 
-    <hr>
     <p>Input your age and click the button:</p>
     <input id="age" value="" />
     <button onclick="askAge()">Submit my age</button>
     <p id="demo"></p>
 
-    <hr>
+<hr>
+
     <p id="demo2"></p> 
 
-    <hr>
+<hr>
+
     <p id="demo3"></p>
     <ul id="animalsId"></ul>
 
-    <hr>
-    
+<hr>
 
-
-
+    <form action="/action_page.php">
+        <label for="fname">Etunimi:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Sukunimi:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+    </form>
+    <button onclick="askName()">Submit</button>
+    <p id="names"></p>
 
     <script src="index.js"></script>
 </body>
