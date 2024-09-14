@@ -32,8 +32,12 @@ for (let i = 0; i<animals.length; i++) {
     listElement.innerHTML += "<li>" + animals[i] + "!</li>";
 } 
 
-function askName(){
-    let f1name = document.getElementById("fname").value;
-    let l2name = document.getElementById("lname").value;
-    document.getElementById("names").innerHTML = "Hei, " + f1name + " "  + l2name;
+function askName (f1name,l2name){
+    return f1name + " " + l2name;
+}
+function printName(){
+    const f1name = document.getElementById("fname").value;
+    const l2name = document.getElementById("lname").value;
+    const name = askName(f1name, l2name);
+    document.getElementById("greet").innerHTML = "Hei " + name;
 }
