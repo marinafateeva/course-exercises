@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti</title>
+<link href="projekti.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+    <h1>Tieto- ja viestintätekniikan perustehtävät</h1>
+    </nav>
+
+    <div class="addmark">
+        <h2>Lisää merkintä</h2>
+    <form id="form1" action="/action_page.php">
+        <label for="nimi">Nimi:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label id="tieto" value="">Tieto:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+    
+    <button class="button" id="button1" onclick="fieldAlert()">Lisää tieto</button></form>
+    </div>
+    <p id="result"></p>
+
+    <h3>Suoritettavat:</h3>
+
+    <div class="addtask">
+    <form id="form2" action="/action_page.php">
+        <div class="checkboxes">
+        <input type="checkbox" id="task1" name="task1" value="HTML">
+        <label for="task1"> HTML</label><br></div>
+        <div class="checkboxes">
+        <input type="checkbox" id="task2" name="task2" value="CSS">
+        <label for="task2"> CSS</label><br></div>
+        <div class="checkboxes">
+        <input type="checkbox" id="task3" name="task3" value="JavaScript">
+        <label for="task3"> JavaScript</label><br></div>
+        <div class="checkboxes">
+        <input type="checkbox" id="task4" name="task4" value="CI/CD">
+        <label for="task4"> CI/CD</label><br></div>
+    
+        <button class="button" id="button2">Merkkaa</button></form>
+    </div>
+
+
+
+
+
+<script> src="projekti.js"</script>   
+</body>
+</html>

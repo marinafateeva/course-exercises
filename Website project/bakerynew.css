@@ -16,7 +16,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #FFE4BE;
     position: sticky;
     top: 0;
  }
@@ -34,7 +34,7 @@ html{
  }
  .navbar ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 8px 25px;
     transition: all .5s ease;
  }
@@ -43,3 +43,6 @@ html{
    color: black;
    box-shadow: 0 0 10px white;
  }
+#topsection {
+   
+}
