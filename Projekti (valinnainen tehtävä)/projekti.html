@@ -31,25 +31,29 @@
 
     <div class="addtask">
     <form id="form2">  <!-- action="/action_page.php" -->
-        <div class="checkboxes">
-        <input type="checkbox" id="task1" name="task1" value="HTML">
-        <label for="task1"> HTML</label><br></div>
-        <div class="checkboxes">
-        <input type="checkbox" id="task2" name="task2" value="CSS">
-        <label for="task2"> CSS</label><br></div>
-        <div class="checkboxes">
-        <input type="checkbox" id="task3" name="task3" value="JavaScript">
-        <label for="task3"> JavaScript</label><br></div>
-        <div class="checkboxes">
-        <input type="checkbox" id="task4" name="task4" value="CI/CD">
-        <label for="task4"> CI/CD</label><br></div>
-    
-        <button class="button" id="button2">Merkkaa</button></form>
+    <div class="task">
+        <input type="checkbox" id="html" name="html">
+        <label for="html"> HTML</label>
+        <span class="status"></span>
     </div>
-
-
-
-
+    <div class="task">
+        <input type="checkbox" id="css" name="css">
+        <label for="css"> CSS</label>
+        <span class="status"></span>
+    </div>
+    <div class="task">
+        <input type="checkbox" id="js" name="js">
+        <label for="js"> JavaScript</label>
+        <span class="status"></span>
+    </div>
+        <div class="task">
+        <input type="checkbox" id="cicd" name="cicd">
+        <label for="cicd"> CI/CD</label>
+        <span class="status"></span>
+    </div>
+    </form>
+        <button class="button" id="button2" onclick="markTasks()">Merkkaa</button>
+    </div>
 
 <script src="./projekti.js"></script>   
 </body>

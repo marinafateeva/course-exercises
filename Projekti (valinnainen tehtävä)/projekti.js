@@ -24,3 +24,19 @@ if (field2Value.trim() === '') {
     document.getElementById('infoDisplay').innerHTML = field1Value + ': ' + field2Value;
 }
 });
+
+
+function markTasks(){
+    const tasks= document.querySelectorAll('.task');
+    tasks.forEach(task => {
+        const checkbox= task.querySelector('input[type="checkbox"]');
+        const status = task.querySelector('.status');
+        if (checkbox.checked) {
+           status.textContent="   +tunnit pidetty"; }
+            
+           else {
+            status.textContent= "";
+            }
+        }); 
+}
+
