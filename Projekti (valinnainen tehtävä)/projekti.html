@@ -13,20 +13,24 @@
 
     <div class="addmark">
         <h2>Lisää merkintä</h2>
-    <form id="form1" action="/action_page.php">
-        <label for="nimi">Nimi:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label id="tieto" value="">Tieto:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-    
-    <button class="button" id="button1" onclick="fieldAlert()">Lisää tieto</button></form>
+
+    <div class="error" id="errorMsg">Täytä kentät</div>
+
+    <form id="form1"> <!-- action="/action_page.php" -->
+        <label for="field1" value="">Nimi:</label><br>
+        <input type="text" id="field1" name="field1"><br>
+        <label for="field2" value="">Tieto:</label><br>
+        <input type="text" id="field2" name="field2"><br><br>
+    </form>
+    <button class="button" id="button1">Lisää tieto</button>
     </div>
-    <p id="result"></p>
+    
+    <div class="info" id="infoDisplay"></div>
 
     <h3>Suoritettavat:</h3>
 
     <div class="addtask">
-    <form id="form2" action="/action_page.php">
+    <form id="form2">  <!-- action="/action_page.php" -->
         <div class="checkboxes">
         <input type="checkbox" id="task1" name="task1" value="HTML">
         <label for="task1"> HTML</label><br></div>
@@ -47,6 +51,6 @@
 
 
 
-<script> src="projekti.js"</script>   
+<script src="./projekti.js"></script>   
 </body>
 </html>
