@@ -1,10 +1,26 @@
-let secondField = document.getElementById("tieto").value;
+document.getElementById('button1').addEventListener('click', function() {
+    console.log("Moi")
+let field1Value = document.getElementById('field1').value;
+let field2Value = document.getElementById('field2').value;
 
-function fieldAlert() {
-if (secondField.length < 1){
-    document.getElementById("button1").style.color = "red";
+let errorMsg = document.getElementById('errorMsg');
+let infoDisplay = document.getElementById('infoDisplay');
+
+infoDisplay.innerHTML = '';
+
+if (field2Value.trim() === '') {
+    errorMsg.style.display = 'block';
+    document.getElementById('button1').style.backgroundColor='red';
+    document.getElementById('button1').innerHTML='Virhe!!! Et lisännyt tietoa'
+    setTimeout(function() {
+        errorMsg.style.display = 'none';
+        document.getElementById('button1').style.backgroundColor='black';
+        document.getElementById('button1').innerHTML='Lisää tieto'
+        }, 3500);
+} else {
+    errorMsg.style.display = 'none';
+    //infoDisplay.innerHTML = <p>field1Value</p>,<p>field2Value</p>
+    infoDisplay.style.display = 'block';
+    document.getElementById('infoDisplay').innerHTML = field1Value + ': ' + field2Value;
 }
-else { 
-    document.getElementById("result").innerHTML =    
-}
-};
+});

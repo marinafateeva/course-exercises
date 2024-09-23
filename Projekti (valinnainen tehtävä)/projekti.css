@@ -45,8 +45,14 @@ h2{
  color: white;
  width: 100%;
  margin-bottom: 15px;
- border-radius: 5px;
- 
+ border-radius: 5px; 
+}
+#button1:hover{
+    background-color: #0f4b8c;
+}
+#button2:hover{
+    background-color: #fa8fdf;
+    color: black;
 }
 
 input[type=text]{
@@ -83,6 +89,21 @@ h3{
 .checkboxes{
     background-color: #e7d5f7;
     margin:5px;
-
 }
 
+.error{
+    color: white;
+    background-color: #a33018;
+    padding: 10px;
+    display: none;
+}
+
+.info{
+    margin-top: 20px;
+    color: black;
+    background-color: #e7d5f7;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display:none;
+}
