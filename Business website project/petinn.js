@@ -6,3 +6,7 @@ function copyEmail() {
     navigator.clipboard.writeText
         ("example@email.com");
 }
+function copyAddress() {
+    navigator.clipboard.writeText
+        ("City, Street 1, 15015");
+}
