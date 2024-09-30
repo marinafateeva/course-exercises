@@ -260,11 +260,12 @@ input[type=submit]:hover {
 .loc-cont-txt-btn{
    display: flex;
    flex-direction:row;
+   float: right;
 }
 iframe{
    width: 80%;
    height: 350px;
-   float: right;
+   
 }
 .form-link{
    background-color: #a98262;
