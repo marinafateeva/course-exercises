@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City View Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('https://via.placeholder.com/1000x200');
+            background-size: cover;
+            background-position: center;
+        }
+        .tabs-container {
+            position: relative;
+            padding-top: 10px;
+            background-color: #f0f0f0;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .tab {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            top: 1px;
+        }
+        .tab.active {
+            background-color: #000;
+            padding-bottom: 20px;
+            margin-bottom: -10px;
+        }
+        .content-container {
+            background-color: white;
+            padding: 20px;
+            border-top: 1px solid #d32f2f;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-image"></div>
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab active" onclick="openTab('breakfast')">Breakfast with a View</button>
+            <button class="tab" onclick="openTab('juomat')">Juomat</button>
+            <button class="tab" onclick="openTab('dinner')">Dinner with a view</button>
+            <button class="tab" onclick="openTab('seafood')">Seafood Tower</button>
+            <button class="tab" onclick="openTab('jouluounas')">Jouluounas ryhmille kattojen yllä</button>
+            <button class="tab" onclick="openTab('itsenaispv')">Itsenäisyyspäivi illallinen 2024</button>
+            <button class="tab" onclick="openTab('uusivuosi')">Uuden Vuoden illallinen 31.12.2024</button>
+        </div>
+    </div>
+    <div class="content-container">
+        <div id="breakfast" class="content active">
+            <h2>BREAKFAST WITH A VIEW</h2>
+            <p>Koe unohtumaton aamiaiselämys kaupungin kattojen yllä Ateljee Barin 12. kerroksessa.</p>
+            <p>Ateljee Barin yleillinen aamiainen on tarjolla la-su klo 8-12.</p>
+            <p>Valitse mieleisesi aamiaismenukahdestavaihtoehdosta. <a href="#">Tee pöytävaraus tästä.</a></p>
+        </div>
+
+        <div id="juomat" class="content">
+            <h2>JUOMAT</h2>
+            <p>Nauti laajasta juomavalikoimastamme upeiden kaupunkinäkymien äärellä.</p>
+        </div>
+
+        <div id="dinner" class="content">
+            <h2>DINNER WITH A VIEW</h2>
+            <p>Koe ainutlaatuinen illallinen Helsingin kattojen yllä. Tarjoamme herkullisia annoksia upeissa maisemissa.</p>
+        </div>
+
+        <div id="seafood" class="content">
+            <h2>SEAFOOD TOWER</h2>
+            <p>Nauti ylellisestä merenelävätornistamme, joka on täynnä tuoreita herkkuja Itämerestä.</p>
+        </div>
+
+        <div id="jouluounas" class="content">
+            <h2>JOULUOUNAS RYHMILLE KATTOJEN YLLÄ</h2>
+            <p>Järjestä unohtumaton jouluateria ryhmällesi ainutlaatuisessa ympäristössä Helsingin yllä.</p>
+        </div>
+
+        <div id="itsenaispv" class="content">
+            <h2>ITSENÄISYYSPÄIVÄN ILLALLINEN 2024</h2>
+            <p>Juhli Suomen itsenäisyyttä kanssamme erityisellä illallisella, joka tarjoaa parhaat näkymät kaupungin juhlallisuuksiin.</p>
+        </div>
+
+        <div id="uusivuosi" class="content">
+            <h2>UUDEN VUODEN ILLALLINEN 31.12.2024</h2>
+            <p>Toivota uusi vuosi 2025 tervetulleeksi ylellisellä illallisella ja upealla ilotulitusnäytöksellä Helsingin yllä.</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

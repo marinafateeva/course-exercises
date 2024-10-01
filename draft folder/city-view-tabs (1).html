@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City View Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('https://via.placeholder.com/1000x200');
+            background-size: cover;
+            background-position: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px 0;
+        }
+        .tab {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .tab.active {
+            background-color: #000;
+        }
+        .content {
+            padding: 20px;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-image"></div>
+    <div class="tabs">
+        <button class="tab active" onclick="openTab('breakfast')">Breakfast with a View</button>
+        <button class="tab" onclick="openTab('juomat')">Juomat</button>
+        <button class="tab" onclick="openTab('dinner')">Dinner with a view</button>
+        <button class="tab" onclick="openTab('seafood')">Seafood Tower</button>
+        <button class="tab" onclick="openTab('jouluounas')">Jouluounas ryhmille kattojen yllä</button>
+        <button class="tab" onclick="openTab('itsenaispv')">Itsenäisyyspäivi illallinen 2024</button>
+        <button class="tab" onclick="openTab('uusivuosi')">Uuden Vuoden illallinen 31.12.2024</button>
+    </div>
+
+    <div id="breakfast" class="content active">
+        <h2>BREAKFAST WITH A VIEW</h2>
+        <p>Koe unohtumaton aamiaiselämys kaupungin kattojen yllä Ateljee Barin 12. kerroksessa.</p>
+        <p>Ateljee Barin yleillinen aamiainen on tarjolla la-su klo 8-12.</p>
+        <p>Valitse mieleisesi aamiaismenukahdestavaihtoehdosta. <a href="#">Tee pöytävaraus tästä.</a></p>
+    </div>
+
+    <div id="juomat" class="content">
+        <h2>JUOMAT</h2>
+        <p>Juomat-osion sisältö tähän.</p>
+    </div>
+
+    <div id="dinner" class="content">
+        <h2>DINNER WITH A VIEW</h2>
+        <p>Dinner with a view -osion sisältö tähän.</p>
+    </div>
+
+    <div id="seafood" class="content">
+        <h2>SEAFOOD TOWER</h2>
+        <p>Seafood Tower -osion sisältö tähän.</p>
+    </div>
+
+    <div id="jouluounas" class="content">
+        <h2>JOULUOUNAS RYHMILLE KATTOJEN YLLÄ</h2>
+        <p>Jouluounas-osion sisältö tähän.</p>
+    </div>
+
+    <div id="itsenaispv" class="content">
+        <h2>ITSENÄISYYSPÄIVI ILLALLINEN 2024</h2>
+        <p>Itsenäisyyspäivän illallisen sisältö tähän.</p>
+    </div>
+
+    <div id="uusivuosi" class="content">
+        <h2>UUDEN VUODEN ILLALLINEN 31.12.2024</h2>
+        <p>Uuden vuoden illallisen sisältö tähän.</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
