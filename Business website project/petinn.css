@@ -285,7 +285,7 @@ input[type=submit]:hover {
 iframe{
    width: 80%;
    height: 350px;
-   
+   float: right;
 }
 .form-link{
    background-color: #a98262;
@@ -298,6 +298,46 @@ iframe{
    background-color: #6298a9;
 }
 
+
+/*Pricing section*/
+
+.tabs {
+   display: flex;
+   justify-content: center;
+   background-color: #f0f0f0;
+   padding-top: 10px;
+}
+.tab {
+   background-color:#e4f9ff;
+   color: black;
+   border: none;
+   padding: 20px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 0;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   height: 60px;
+}
+.tab.active {
+   background-color: #a98262;
+   color: white;
+   height: 80px;
+   margin-bottom: -35px;
+}
+.price-content {
+   padding: 20px;
+   display: none;
+}
+.price-content.active {
+   display: block;
+}
+/*.header-image{
+   width: 100%;
+   height: 100px;     
+   background-size: cover;
+   background-position: center;
+}*/
 /*FAQ section*/
 .collapsible {
    background-color:#e4f9ff;
@@ -317,7 +357,7 @@ iframe{
    margin-right: 5px;
  }
  
- .active, .collapsible:hover {
+ .collapsible.active, .collapsible:hover {
    background-color:#6298a9;
    color: white;
  }
@@ -330,7 +370,7 @@ iframe{
    margin-left: 5px;
  }
  
- .active:after {
+ .collapsible.active:after {
    content: "\2212";
    color: white;
  }
@@ -343,3 +383,4 @@ iframe{
    background-color: white;
    margin: 5px;
  }
+

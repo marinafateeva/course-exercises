@@ -8,6 +8,8 @@
     <link href="petinn.css" rel="stylesheet"/>
 </head>
 <body>
+  
+
     <nav class="navbar">
         <img src="icons/logo.png" alt="">
 
@@ -23,9 +25,50 @@
         </ul>
     </nav>
 
+<section>
+    <div class="header-image">
+      <img src="">
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-tab="dogs-o">Dogs overnight</button>
+      <button class="tab" data-tab="dogs-f">Dogs full-time</button>
+      <button class="tab" data-tab="cats-o">Cats overnight</button>
+      <button class="tab" data-tab="cats-f">Cats full-time</button>
+      <button class="tab" data-tab="add-serv">Additional services</button>
+    </div>
+  
+    <div id="dogs-o" class="price-content active">
+        <h2>Dogs overnight</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <img src="pictures/dogs-overnight.jpg">
+    </div>
 
+    <div id="dogs-f" class="price-content">
+        <h2>Dogs full-time</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <img src="pictures/dogs-ftime.jpg">
+    </div>
 
+    <div id="cats-o" class="price-content">
+        <h2>Cats overnight</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <img src="pictures/cats-overnight.jpg">
+    </div>
 
+    <div id="cats-f" class="price-content">
+        <h2>Cats full-time</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <img src="pictures/cats-ftime.jpg">
+    </div>
+
+    <div id="add-serv" class="price-content">
+      <h2>Additional services</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <img src="pictures/services.jpg">
+  </div>
+</section>
+
+<section>
     <h1 class="headings">FAQ</h1>
 <p>General information and initial enquires:</p>
 <button class="collapsible"><img src="icons/collapsible2.png" alt="">What is the beast way to contact you?</button>
@@ -48,7 +91,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<button class="collapsible"><img src="icons/collapsible2.png" alt="">What I need to check in/check out at a special time?</button>
+<button class="collapsible"><img src="icons/collapsible2.png" alt="">What if I need to check in/check out at a special time?</button>
 <div class="content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
@@ -57,6 +100,9 @@
 <div class="content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
-    <script src="./petinn.js"></script>     
+</section>
+
+
+<script src="./petinn.js"></script>     
 </body>
 </html>
