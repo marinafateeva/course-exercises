@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="icons/logo.png">
     <link href="petinn.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -13,14 +14,21 @@
 
         <ul>
             <li><a href="petinn_main.html">ABOUT US</a></li>
-            <li><a href="petinn_main.html">REVIEWS</a></li>
+            <li><a href="petinn_main.html#reviews">REVIEWS</a></li>
             <li><a href="petinn_prices.html">PRICING</a></li>
-            <li><a href="petinn_prices.html">FAQ</a></li>
+            <li><a href="petinn_prices.html#faq">FAQ</a></li>
             <li><a href="petinn_locations.html">LOCATIONS</a></li>
             <li><a href="petinn_shop.html">SHOP</a></li>
             <li><a href="petinn_contact.html">CONTACT US</a></li>
-            <li><a href="petinn_contact.html">FILL UP THE FORM</a></li>
+            <li><a href="petinn_contact.html#filluptheform">FILL UP THE FORM</a></li>
         </ul>
+        
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+            <button id="search-button" type="submit" onclick="searchButton()"><i class="fa fa-search"></i></button>
+              </div>
     </nav>
 
 

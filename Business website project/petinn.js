@@ -1,3 +1,8 @@
+//Search button - from w3 schools
+function searchButton() {
+  alert("In the future it could be a working search bar! But for now it is a mockup for Perustehtävät -kurssi");
+}
+
 //Copy buttons - from w3 schools
 function copyNumber() {
     navigator.clipboard.writeText
@@ -36,11 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
       tab.addEventListener('click', function() {
           const tabName = this.getAttribute('data-tab');
           
-          // Удаляем активный класс у всех вкладок и контента
           document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
           document.querySelectorAll('.price-content').forEach(c => c.classList.remove('active'));
           
-          // Добавляем активный класс кликнутой вкладке и соответствующему контенту
           this.classList.add('active');
           document.getElementById(tabName).classList.add('active');
       });
