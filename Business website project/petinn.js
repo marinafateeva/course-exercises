@@ -1,6 +1,6 @@
 //Search button - from w3 schools
 function searchButton() {
-  alert("In the future it could be a working search bar! But for now it is a mockup for Perustehtävät -kurssi");
+  alert("In the future it could be a working search bar! But for now it is a mockup for the course Perustehtävät");
 }
 
 //Copy buttons - from w3 schools
@@ -49,3 +49,37 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+//Newsletter
+document.getElementById('newsletterButton').addEventListener('click', function() {
+let fieldValue = document.getElementById('newsletterInputForm').value;
+const errorMsg = document.getElementById('errorMsg');
+const checkbox = document.getElementById('newsletterCheckbox');
+const errorMsg2 = document.getElementById('errorMsg2');
+
+if (fieldValue.trim() === '') {
+  errorMsg.style.display = 'block';
+  document.getElementById('newsletterButton').style.backgroundColor='#f25580';
+  document.getElementById('newsletterButton').innerHTML='Error'
+  setTimeout(function() {
+      errorMsg.style.display = 'none';
+      document.getElementById('newsletterButton').style.backgroundColor='#6298a9';
+      document.getElementById('newsletterButton').innerHTML='Send'
+      }, 3500);
+} else if (!checkbox.checked){
+  errorMsg2.style.display = 'block';
+  document.getElementById('newsletterButton').style.backgroundColor='#f25580';
+  document.getElementById('newsletterButton').innerHTML='Error'
+  setTimeout(function() {
+    errorMsg2.style.display = 'none';
+    document.getElementById('newsletterButton').style.backgroundColor='#6298a9';
+    document.getElementById('newsletterButton').innerHTML='Send'
+    }, 3500);
+} else {
+  errorMsg.style.display = 'none';
+  alert("In the future this button could also ask for a certain text format as in emails");
+}
+});
+
+
+
