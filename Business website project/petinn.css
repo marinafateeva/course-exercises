@@ -122,7 +122,7 @@ html{
    flex-direction: column;
    color: black;
    align-items: center;
-   padding: 20px;
+   padding: 0px;
 }
 #team-section h1{
    padding: 20px;
@@ -248,8 +248,14 @@ div.scroll-container img {
 }
 
 
-/*Form from w3 schools FORM*/
-input[type=text], select, textarea {
+/*Form from w3 schools*/ 
+/*Two-column property made with the help of Chat GPT*/
+.required-field{
+  color: red;
+  font-size:larger;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -257,10 +263,15 @@ input[type=text], select, textarea {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
+    resize: vertical; 
   }
 
-input[type=submit] {
+  .submit-btn-container{
+    grid-column: span 2; 
+    display: flex; 
+    justify-content: center; 
+  }
+button[type=submit] {
     background-color: #a98262;
     color: white;
     padding: 12px 20px;
@@ -269,12 +280,13 @@ input[type=submit] {
     cursor: pointer;
     display: block;
     margin: auto;
+    justify-self: center;
   }
   
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #6298a9;
   }
-  
+
 .form-container {
     border-radius: 5px;
     background-color: #e4f9ff;
@@ -284,6 +296,16 @@ input[type=submit]:hover {
     margin-left: 100px;
     margin-right: 100px;
   } 
+
+.two-column-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+} 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 
 /*SOME LINKS*/
 .some{
@@ -396,7 +418,7 @@ iframe{
    display: flex;
    justify-content: center;
    background-color: transparent;
-   margin-top: -130px;
+   margin-top: -110px;
 }
 .tab {
    background-color:#6298a9;
@@ -531,12 +553,14 @@ footer{
    list-style: none;
    text-align: start;
  }
- .grid-item-links ul li a{
+ .grid-item-links ul li a, .grid-item-links ul li a:active{
    text-decoration: none;
+   color: black;
  }
  .grid-item-links ul li:hover{
    text-decoration: underline;
    cursor: pointer;
+   color: black;
  }
  .grid-item-back{
    grid-row-start:1;
@@ -545,12 +569,18 @@ footer{
    grid-column-end:3;
    text-align: center;
  }
- .grid-item-back a{
+ .grid-item-back img{
+  width: 35px;
+  height: 35px;
+ }
+ .grid-item-back a, .grid-item-back a:active {
    text-decoration: none;
+   color: black;
  }
  .grid-item-back a:hover{
    text-decoration: underline;
- }
+   color: black;}
+   
  .grid-item-newsletter{
    grid-row-start:1;
    grid-row-end:2;
@@ -595,6 +625,8 @@ footer{
    height: 31px;
    border-top-right-radius: 4px;
    border-bottom-right-radius: 4px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
  }
  #newsletterButton:hover {
    background:#a98262;
@@ -606,7 +638,7 @@ footer{
 
  .error{
    color: white;
-   background-color: #f25580;
+   background-color: black;
    padding: 5px;
    display: none;
 }
@@ -620,4 +652,7 @@ footer{
    text-align: center;
    padding-top: 30px;
  }
+ 
+
+/*SHOP PAGE*/
  

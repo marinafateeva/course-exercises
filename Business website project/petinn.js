@@ -59,7 +59,7 @@ const errorMsg2 = document.getElementById('errorMsg2');
 
 if (fieldValue.trim() === '') {
   errorMsg.style.display = 'block';
-  document.getElementById('newsletterButton').style.backgroundColor='#f25580';
+  document.getElementById('newsletterButton').style.backgroundColor='black';
   document.getElementById('newsletterButton').innerHTML='Error'
   setTimeout(function() {
       errorMsg.style.display = 'none';
@@ -68,7 +68,7 @@ if (fieldValue.trim() === '') {
       }, 3500);
 } else if (!checkbox.checked){
   errorMsg2.style.display = 'block';
-  document.getElementById('newsletterButton').style.backgroundColor='#f25580';
+  document.getElementById('newsletterButton').style.backgroundColor='black';
   document.getElementById('newsletterButton').innerHTML='Error'
   setTimeout(function() {
     errorMsg2.style.display = 'none';
@@ -80,6 +80,9 @@ if (fieldValue.trim() === '') {
   alert("In the future this button could also ask for a certain text format as in emails");
 }
 });
+
+
+//Shop page
 
 
 
