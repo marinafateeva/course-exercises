@@ -165,21 +165,140 @@ html{
    width: 200px;
  }
 
+/*About us: gallery + text*/
+.about-us{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  padding: 15px;
+  margin: 25px;
+  font-size: 18px;
+}
+.gallery{
+  padding: 10px;
+}
+.about-us-text{
+  grid-row-start:1;
+  grid-row-end:2;
+  grid-column-start:2;
+  grid-column-end:3;
+  background-color: white;
+  border: 1px outset #a98262;
+  border-style: solid;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1), 1px 1px 3px 3px rgba(0,0,0,0.05);
+}
 
-/*From w3 schools GALLERY*/
-div.scroll-container {
-    background-color: #8CCBF2;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
+/*GALLERY grid from w3schools*/
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-div.scroll-container img {
-    padding: 10px;
-    width:  500px;
-    height: 500px;
-    object-fit: cover;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
+}
+
+/*TESTIMONIALS*/
+.testimonials-grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding: 15px;
+  margin: 25px;
+  font-size: 18px;
+ }
+ .grid-item-benefits{
+   grid-row-start:1;
+   grid-row-end:2;
+   grid-column-start:1;
+   grid-column-end:2;
+   background-color: white;
+   border: 1px outset #a98262;
+   border-style: solid;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1), 1px 1px 3px 3px rgba(0,0,0,0.05);
+}
+.testimonials-text-paragrpaph{
+  display: flex;
+  flex-direction: row;
+}
+.text-icon img{
+  width: 55px;
+  height: 55px;
+}
+.testimonials-words{
+  padding: 10px;
+  padding-top: 0;
+}
+.grid-item-cards{
+  grid-row-start:1;
+  grid-row-end:2;
+  grid-column-start:2;
+  grid-column-end:3;
+  padding: 20px;
+  padding-top: 30px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.testimonial-card{
+  box-shadow: 4px 4px 5px 5px rgba(0,0,0,0.1),
+  6px 3px 3px 3px rgba(0,0,0,0.05);
+  padding: 10px;
+  border-radius: 8px;
+}
+.tst-pic img{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  float: right;
+  border: 3px outset #a98262;
+  border-radius: 50%;
+  border-style: solid;
+}
+#stars{
+  color: #ffb700;
+}
+
 
 /*CONTACT SECTION*/
 .contact-header-pic{
