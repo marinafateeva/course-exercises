@@ -50,39 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//Products
-document.addEventListener('DOMContentLoaded', function() {
-  const tabs = document.querySelectorAll('.tab');
-  
-  tabs.forEach(tab => {
-      tab.addEventListener('click', function() {
-          const tabName = this.getAttribute('data-tab');
-          
-          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-          document.querySelectorAll('.product-content').forEach(c => c.classList.remove('active'));
-          
-          this.classList.add('active');
-          document.getElementById(tabName).classList.add('active');
-      });
-  });
-});
-
-//MODAL WINDOW from w3 schools
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("viewMoreBtn");
-var span = document.getElementsByClassName("close")[0];
- 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
 
 //Newsletter
 document.getElementById('newsletterButton').addEventListener('click', function() {
