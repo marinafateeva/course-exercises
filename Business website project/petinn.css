@@ -88,9 +88,11 @@ html{
    border: none;
    cursor: pointer;
    width: 30px;
-   height: 31px;
+   height: 29px;
    border-top-right-radius: 4px;
    border-bottom-right-radius: 4px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
  }
  
  #search-button:hover {
@@ -140,6 +142,7 @@ html{
    justify-content: space-around;
    box-sizing: border-box;
    margin-top: -300px;
+   margin-bottom: 100px;
  }
  .team-member-box-container{
    width: 360px;
@@ -161,8 +164,11 @@ html{
  }
  .team-member-text{
    text-align: center;
-   background-color:#e4f9ff;
    width: 200px;
+ }
+ .team-member-name{
+  background-color: #e4f9ff;
+  font-weight: bold;
  }
 
 /*About us: gallery + text*/
@@ -172,6 +178,7 @@ html{
   grid-template-rows: auto auto;
   padding: 15px;
   margin: 25px;
+  margin-bottom: 100px;
   font-size: 18px;
 }
 .gallery{
@@ -185,18 +192,14 @@ html{
   background-color: white;
   border: 1px outset #a98262;
   border-style: solid;
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1), 1px 1px 3px 3px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 /*GALLERY grid from w3schools*/
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -238,12 +241,20 @@ html{
 }
 
 /*TESTIMONIALS*/
+#testimonials{
+  background-image: linear-gradient(#e4f9ff, white);
+  padding-top: 20px;
+}
+#testimonials-heading{
+  padding-top: 60px;
+}
 .testimonials-grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   padding: 15px;
   margin: 25px;
+  margin-bottom: 50px;
   font-size: 18px;
  }
  .grid-item-benefits{
@@ -276,8 +287,8 @@ html{
   grid-column-start:2;
   grid-column-end:3;
   padding: 20px;
-  padding-top: 30px;
-  max-height: 500px;
+  padding-top: 0px;
+  max-height: 600px;
   overflow-y: auto;
 }
 .testimonial-card{
@@ -285,6 +296,7 @@ html{
   6px 3px 3px 3px rgba(0,0,0,0.05);
   padding: 10px;
   border-radius: 8px;
+  background-color: white;
 }
 .tst-pic img{
   width: 60px;
@@ -344,12 +356,14 @@ html{
     margin-left: 30px;
     margin-right: 30px;
 }
+.box h3{
+  margin: 8px;
+}
 .box img{
    width: 70px;
    height: 70px;
    background-color: white;
-   padding: 12px;
-   margin:10px;
+   padding: 10px;
 }
 
 /*Copy to clipboard*/
@@ -360,7 +374,7 @@ html{
    color: white;
    border-radius: 4px;  
    border: none;
-   margin-bottom: 10px;
+   margin: 10px;
 }
 .copy-button:hover{
    background-color: #6298a9;
@@ -464,35 +478,28 @@ button[type=submit]:hover {
   justify-content: center; /* To horizontally center the content */
 }
 
-/*Locations page*/
+/*LOCATIONS PAGE*/
 .locations-section{
-   margin-top: 15px;
-   margin-bottom: 50px;
-   margin-left: 55px;
-   margin-right: 55px;
-   overflow: auto;
+   margin: 35px;
    white-space: nowrap;
    display: grid;
-   align-items:normal; 
-   justify-content:space-evenly;
-   grid-template-columns: 1fr 1fr;
-   
+   grid-template-columns: 1fr 1fr; 
+   grid-template-rows: auto auto;
+   column-gap: 7%;
 }
 
 .location-description-box{
+   grid-row-start:1;
+   grid-row-end:2;
+   grid-column-start:1;
+   grid-column-end:2;
    border: 3px outset #a98262;
    border-style: solid;
-   margin-bottom: 100px;
-   overflow: auto;
-   white-space: nowrap;
    display: grid;
-   align-items:normal; 
-   justify-content: space-between;
    grid-template-columns: 1fr 1fr;
    column-gap: 20px;
    padding: 20px;
-   width: 100%;
-   height: 350px;
+   
 }
 #loc-btn{
    width:50px;
@@ -515,9 +522,12 @@ button[type=submit]:hover {
 }
 
 iframe{
-   width: 80%;
-   height: 350px;
-   float: right;
+   grid-row-start:1;
+   grid-row-end:2;
+   grid-column-start:2;
+   grid-column-end:3;
+   display: flex;
+   align-items: end;
 }
 .form-link{
    background-color: #a98262;
@@ -531,7 +541,7 @@ iframe{
 }
 
 
-/*Pricing section with the initial help of Claude AI*/
+/*PRICES with the initial help of Claude AI*/
 
 .tabs {
    display: flex;
@@ -588,6 +598,10 @@ iframe{
 }*/
 
 /*FAQ section from W3 schools*/
+#faq{
+  margin-left: 150px;
+  margin-right: 150px;
+}
 .collapsible {
    background-color:#e4f9ff;
    color: black;
