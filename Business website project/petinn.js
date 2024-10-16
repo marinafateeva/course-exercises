@@ -1,6 +1,6 @@
 //Search button - from w3 schools
 function searchButton() {
-  alert("In the future it could be a working search bar! But for now it is a mockup for the course Perustehtävät");
+  alert("In the future it could be a working search bar! But for now it is a mockup for the course Tieto- ja viestintätekniikan perustehtävät");
 }
 
 //Copy buttons - from w3 schools
@@ -78,7 +78,7 @@ if (fieldValue.trim() === '') {
     }, 3500);
 } else {
   errorMsg.style.display = 'none';
-  alert("In the future this button could also ask for a certain text format as in emails");
+  alert("Thanks for joining our newsletter! (In the future, this input could also ask for a certain type of text as in emails)");
 }
 });
 

@@ -32,13 +32,13 @@
           </div>
 </nav>
 
-    <section>
+    <section id="prices-top">
       <div class="contact-header">
           <div class="contact-header-pic">
               <div class="contact-text">
-                  <h1>Our prices</h1><br><br>
+                  <h1>Check out our price list below</h1><br>
                   <h4>All the prices include VAT</h4><br>
-                  <h4>Also available to</h4> <button class="pdf-button" onclick="window.open('Pricing Pet Inn.pdf', '_blank')">Open as PDF</button>
+                  <h4>Also available to</h4> <button class="pdf-button" onclick="window.open('Pricing Pet Inn.pdf', '_blank')">open as PDF</button>
               </div>
               <div class="contact-pic">
                 <img id="prices-pic" src="pictures/prices.jpeg" alt="">
@@ -90,7 +90,7 @@
 
 <section id="faq">
     <h1 class="headings">FAQ</h1>
-<p>General information and initial enquires:</p>
+<h3>General information and initial enquires:</h3><br>
 <button class="collapsible"><img src="icons/collapsible2.png" alt="">What is the best way to contact you?</button>
 <div class="content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -122,6 +122,52 @@
 </div>
 </section>
 
+<footer>
+  <div class="footer-grid-container">
+   <div class="grid-item-links">
+       <ul>
+           <li><a href="petinn_locations.html">Locate Us</a></li>
+           <li><a href="petinn_contact.html">Contact Us</a></li><br>
+           <li>Privacy Policy</li>
+           <li>Client Support</li>
+       </ul>
+   </div>
+
+   <div class="grid-item-back">
+       <img src="icons/up-arrrows.png" alt=""><br>
+       <h4><a href="petinn_prices.html#prices-top">Back to Top</a></h4>
+   </div>
+
+   <div class="grid-item-newsletter">
+       <div class="newsletter-text" >
+       <h4>Newsletter</h4>
+       <p>Do you want to receive the news and<br>  
+       special offers? Sign up and get 10% off</p>
+       </div>
+
+       <div class="newsletter-container"> <!--from w3 schools-->
+           <form action="">
+               <input id="newsletterInputForm" type="text" placeholder="Type your email..." name="">
+           </form>
+           <button id="newsletterButton" type="submit">Send</i></button>
+       </div>
+
+       <div class="error" id="errorMsg">Type an email!</div>
+
+       <div class="newsletter-input-form">
+       <input type="checkbox" id="newsletterCheckbox" name="" value="">
+       <label for="">I accept newsletter <span id="fake-links">terms</span></label><br>
+       </div>
+
+       <div class="error" id="errorMsg2">Accept the terms</div>
+       
+   </div>
+
+   <div class="grid-item-signature">
+       <p>2024 Marina Fateeva TIVIPT24DST as a project to the course Tieto- ja viestintätekniikan perustehtävät, ohjelmistokehittäjä</p>
+   </div>
+ </div>
+ </footer>
 
 <script src="./petinn.js"></script>     
 </body>
