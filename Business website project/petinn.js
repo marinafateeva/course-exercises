@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//Newsletter
+//Newsletter - from JS additional task from the course; there I did it with the help of Chat GPT
 document.getElementById('newsletterButton').addEventListener('click', function() {
 let fieldValue = document.getElementById('newsletterInputForm').value;
 const errorMsg = document.getElementById('errorMsg');
